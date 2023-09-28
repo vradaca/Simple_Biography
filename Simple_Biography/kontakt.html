@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="kontcss.css" type="text/css">
+    <script defer src="javaskript.js"></script>
+</head>
+<body>
+    <div id="kontejner">
+        <div id="header">
+            <nav>
+                <ul>
+                    <a href="pocetna.html"><li>Početna</li></a>
+                    <a href="biografija.html"><li>Biografija</li></a>
+                    <a href="galerija.html"><li>Galerija</li></a>
+                    <a href="mma.html"><li>MMA</li></a>
+                    <a href="kontakt.html"><li>Kontakt</li></a>
+                </ul>
+            </nav>
+        </div>
+        <div id="sadrzaj">
+            <form action="pocetna.html" onsubmit="return provera()" method="get">
+                <fieldset id="polje">
+                    <div id="jedan">
+                        <label for="ime" >Unesite ime:</label><br>
+                        <label for="prezime" >Unesite prezime:</label><br>
+                        <label for="mejl" >Unesite e-mail:</label><br>
+                        <label for="lozinka" >Unesite lozinku:</label><br>
+                        <label for="lozinka1" >Potvrdite lozinku:</label><br>
+                    </div>
+                    <div id="dva">
+                        <input type="text" name="ime" id="ime"  placeholder="Ime"><br>                    
+                        <input type="text" name="prezime" id="prezime"  placeholder="Prezime"><br>                    
+                        <input type="email" name="e-mejl" id="e-mejl"   placeholder="E-mail"><br>
+                        <input type="password" name="lozinka" id="lozinka"   placeholder="Lozinka"><br>
+                        <input type="password" name="lozinka1" id="lozinka1" required placeholder="Lozinka"><br>
+                    </div>
+                    <button type="submit" id="dugme" >Posalji</button>
+                </fieldset>
+            </form>
+        </div>
+        <footer>
+            <div class="stranice" >
+                <ul>
+                    <li><a href="pocetna.html">Početna</a></li>
+                    <li><a href="galerija.html">Galerija</a></li>
+                    <li><a href="biografija.html">Biografija</a></li>
+                </ul>
+            </div>
+            <div class="ikonice">
+                <ul>
+                    <li> <a href="https://www.facebook.com" class="fa fa-facebook" target="blank"></a></li>
+                    <li>  <a href="https://www.instagram.com" class="fa fa-instagram" target="blank"></a></li> 
+                </ul>
+            </div>
+        </footer >
+    </div>
+</body>
+</html>

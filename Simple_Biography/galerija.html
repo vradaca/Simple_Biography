@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Galerija</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="javaskript.js"></script>
+    <style>
+        body{
+            background-image: url("https://us.123rf.com/450wm/tomertu/tomertu1604/tomertu160400648/56042369-glitter-vintage-lights-website-banner-background-silver-and-black-defocused-.jpg?ver=6");
+			overflow-x:hidden;
+		}
+        #kontejner{
+            padding: 0;
+            margin-left: auto;
+            margin-right: auto;
+            position: absolute;
+            width: 100%;
+        }
+        nav{
+            overflow: hidden;
+            background-color:lightblue;
+            opacity: 0.95;
+            font-weight: bold;
+            color: blue;
+            font-size:26px;
+            width: 100%;
+            height: 80px;
+        }
+        nav {
+            margin-bottom: 30px;
+        }
+        nav ul li{
+            display: inline;
+            list-style-type: none;
+            margin: 0 30px 20px 0;
+        }
+        
+        .glr{
+            margin: 10px 50px;
+        }
+        .glr img{
+            transition: 1s;
+            padding: 15px;
+            width: 370px;
+            height: 250px;
+        }
+        .glr img:hover{
+            filter: grayscale(100%);
+            transform: scale(1.1);
+        }
+        footer{
+            overflow: hidden;
+            clear: both;
+            background-color:lightblue;
+            opacity: 0.95;
+            font-weight: bold;
+            color: blue;
+            width: 100%;
+            height: 80px;
+        }
+        a{
+            text-decoration: none;
+            color: blue;
+        }
+        .stranice ul li a {
+            color: blue;
+            float:left;
+            margin: 15px;
+            font-size: 22px;
+            font-weight: bold;
+            text-align: center;
+            
+        }
+        .stranice ul{
+            list-style-type: none;
+        }
+        .stranice a{
+            text-decoration: none;
+            color: blue;
+        }
+        .stranice  a:active{
+            text-decoration: none;
+            color: purple;
+        }
+        .ikonice{
+            margin: 22px;
+        }
+        .ikonice ul{
+            list-style-type: none;
+        }
+        .ikonice ul li   a{
+            margin: 0px 30px 0px 0px;
+            text-decoration: none;
+            float:right;
+        }
+        .ikonice a:active{
+            color: gray;
+        }
+        .fa {
+            padding: 10px;
+            font-size: 20px;
+            width: 25px;;
+            text-align: center;
+            text-decoration: none;
+        }
+        .fa-facebook {
+            background: #161616;
+            color: white;
+        }
+        .fa-instagram{
+            background:#161616;
+            color:white;
+        }
+        @media only screen and (min-width: 300px){
+            nav{
+                width: 100%;
+                font-size: 16px;
+            }
+            #sadrzaj{
+                margin: auto;
+            }
+            .glr img{
+                padding: 10px;
+                width: 80%;
+                height: auto;
+                transition: 1s;
+            }
+            .glr img:hover{
+                filter: grayscale(100%);
+                transform: scale(1.1);
+            }
+            .stranice ul li a {
+                color: blue;
+                float:left;
+                margin: 5px;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+            
+            }
+            .fa {
+                padding: 10px;
+                font-size: 12px;
+                width: 14px;;
+                text-align: center;
+                text-decoration: none;
+            }
+            .ikonice{
+                margin: 2px;
+            }
+            footer{
+                width: 100%;
+            }
+        }
+        @media only screen and (min-width: 450px){
+            nav{
+                width: 100%;
+                font-size: 18px;
+            }
+            #sadrzaj{
+                margin: auto;
+            }
+            .glr img{
+                padding: 12px;
+                width: 80%;
+                height: auto;
+                transition: 1s;
+            }
+            .glr img:hover{
+                filter: grayscale(100%);
+                transform: scale(1.1);
+            }
+            .stranice ul li a {
+                color: blue;
+                float:left;
+                margin: 8px;
+                font-size: 14px;
+                font-weight: bold;
+                text-align: center;
+            
+            }
+            .fa {
+                padding: 10px;
+                font-size: 14px;
+                width: 16px;;
+                text-align: center;
+                text-decoration: none;
+            }
+            footer{
+                width: 100%;
+            }
+        }
+        @media only screen and (min-width: 600px){
+            nav{
+                width: 100%;
+                font-size: 20px;
+            }
+            #sadrzaj{
+                margin: auto;
+            }
+            .glr img{
+                transition: 1s;
+                padding: 15px;
+                width: 40%;
+                height: auto;
+            }
+            .stranice ul li a {
+                color: blue;
+                float:left;
+                margin: 10px;
+                font-size: 18px;
+                font-weight: bold;
+                text-align: center;
+            
+            }
+            .fa {
+                padding: 10px;
+                font-size: 18px;
+                width: 20px;;
+                text-align: center;
+                text-decoration: none;
+            }
+            footer{
+                width: 100%;
+            }
+        }
+        @media only screen and (min-width: 760px){
+            nav{
+                width: 100%;
+                font-size: 24px;
+            }
+            #sadrzaj{
+                margin: auto;
+            }
+            .glr img{
+                transition: 1s;
+                padding: 15px;
+                width: 370px;
+                height: 250px;
+            }
+            .stranice ul li a {
+                color: blue;
+                float:left;
+                margin: 15px;
+                font-size: 22px;
+                font-weight: bold;
+                text-align: center;
+            
+            }
+            .fa {
+                padding: 10px;
+                font-size: 20px;
+                width: 25px;;
+                text-align: center;
+                text-decoration: none;
+            }
+            .ikonice{
+                margin: 22px;
+            }
+            footer{
+                width: 100%;
+            }
+        }
+        @media only screen and (min-width: 880px){
+            nav{
+                width: 100%;
+                font-size: 26px;
+            }
+            #sadrzaj{
+                margin: auto;
+            }
+            .glr img{
+                transition: 1s;
+                padding: 15px;
+                width: 370px;
+                height: 250px;
+            }
+            .stranice ul li a {
+                color: blue;
+                float:left;
+                margin: 15px;
+                font-size: 22px;
+                font-weight: bold;
+                text-align: center;
+            
+            }
+            .fa {
+                padding: 10px;
+                font-size: 20px;
+                width: 25px;;
+                text-align: center;
+                text-decoration: none;
+            }
+            .ikonice{
+                margin: 22px;
+            }
+            footer{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="kontejner">
+        <div id="header">
+            <nav>
+                <ul>
+                    <a href="pocetna.html"><li>Početna</li></a>
+                    <a href="biografija.html"><li>Biografija</li></a>
+                    <a href="galerija.html"><li>Galerija</li></a>
+                    <a href="mma.html"><li>MMA</li></a>
+                    <a href="kontakt.html"><li>Kontakt</li></a>
+                </ul>
+            </nav>
+        </div>
+        <div id="sadrzaj">
+            <div class="glr">
+                <a href="slike\IMG-20200116-WA0010.jpg" target="_blank">
+                    <img src="slike\IMG-20200116-WA0010.jpg">
+                </a>
+                <a href="slike\IMG_20191111_132811_377.jpg" target="_blank">
+                    <img src="slike\IMG_20191111_132811_377.jpg">
+                </a>
+                <a href="slike\received_301166734106842.jpeg" target="_blank">
+                    <img src="slike\received_301166734106842.jpeg">
+                </a>
+                <a href="slike\IMG-20200115-WA0038.jpg" target="_blank">
+                    <img src="slike\IMG-20200115-WA0038.jpg">
+                </a>
+                <a href="slike\IMG-20190428-WA0005.jpeg" target="_blank">
+                    <img src="slike\IMG-20190428-WA0005.jpeg">
+                </a>
+                <a href="slike\IMG_20191216_122637_545.jpg" target="_blank">
+                    <img src="slike\IMG_20191216_122637_545.jpg">
+                </a>
+            </div>
+        </div>
+        <footer>
+            <div class="stranice" >
+                <ul>
+                    <li><a href="pocetna.html">Početna</a></li>
+                    <li><a href="galerija.html">Galerija</a></li>
+                    <li><a href="biografija.html">Biografija</a></li>
+                </ul>
+            </div>
+            <div class="ikonice">
+                <ul>
+                    <li> <a href="https://www.facebook.com" class="fa fa-facebook" target="blank"></a></li>
+                    <li>  <a href="https://www.instagram.com" class="fa fa-instagram" target="blank"></a></li> 
+                </ul>
+            </div>
+        </footer >
+    </div>
+</body>
+</html>

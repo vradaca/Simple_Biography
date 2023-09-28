@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MMA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            background-image: url("https://us.123rf.com/450wm/tomertu/tomertu1604/tomertu160400648/56042369-glitter-vintage-lights-website-banner-background-silver-and-black-defocused-.jpg?ver=6");
+			overflow-x: hidden
+            font-family: "Times New Roman", Times, serif;
+        }
+        #kontejner{
+            padding: 0;
+            margin-left: auto;
+            margin-right: auto;
+            position: absolute;
+        }
+        nav{
+            overflow: hidden;
+            background-color:lightblue;
+            opacity: 0.95;
+            font-weight: bold;
+            color: blue;
+            font-size:26px;
+            width: 100%;
+        }
+        nav {
+            float: right;
+        }
+        nav ul li{
+            display: inline;
+            list-style-type: none;
+            margin: 0 30px 20px 0;
+        }
+        #sadrzaj{
+            margin: 0px auto;
+            font-size: 20px;
+            color: white;
+        }
+        h1{
+            text-align: center;
+            font-size: 36px;
+        }
+        h2{
+            text-align: center;
+            font-size: 30px;
+        }
+        #rg{
+            float: right;
+            width: 300px;
+        }
+        #bih{
+            float: left;
+            width: 300px;
+        }
+        #rogen{
+            float: right;
+            width: 320px;
+        }
+        footer{
+            overflow: hidden;
+            clear: both;
+            background-color:lightblue;
+            opacity: 0.95;
+            font-weight: bold;
+            color: blue;
+            width: 100%;
+            height: 80px;
+        }
+        a{
+            color: blue;
+            text-decoration: none;
+        }
+        .stranice ul li a {
+            color: blue;
+            float:left;
+            margin: 15px;
+            font-size: 22px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .stranice ul{
+            list-style-type: none;
+        }
+        .stranice a{
+            text-decoration: none;
+        }
+        .stranice  a:active{
+            color: purple;
+        }
+        .ikonice{
+            margin: 22px;
+        }
+        .ikonice ul{
+            list-style-type: none;
+        }
+        .ikonice ul li   a{
+            margin: 0px 30px 0px 0px;
+            text-decoration: none;
+            float:right;
+        }
+        .ikonice a:active{
+            color: gray;
+        }
+        .fa {
+            padding: 10px;
+            font-size: 20px;
+            width: 25px;;
+            text-align: center;
+            text-decoration: none;
+        }
+        .fa-facebook {
+            background: #161616;
+            color: white;
+        }
+        .fa-instagram{
+            background:#161616;
+            color:white;
+        }
+        @media only screen and (min-width: 300px){
+            nav{
+                width: 100%;
+                font-size: 16px;
+            }
+            #sadrzaj{
+                margin: auto;
+            }
+            #rg{
+                margin: auto 1%;
+                width: 98%;
+            }
+            #bih{
+                margin: auto 1%;
+                width: 98%;
+            }
+            #rogen{
+                margin: auto 1%;
+                width: 98%;
+            }
+            .stranice ul li a {
+                color: blue;
+                float:left;
+                margin: 5px;
+                font-size: 12px;
+                font-weight: bold;
+                text-align: center;
+            
+            }
+            .fa {
+                padding: 10px;
+                font-size: 12px;
+                width: 14px;;
+                text-align: center;
+                text-decoration: none;
+            }
+            .ikonice{
+                margin: 2px;
+            }
+            footer{
+                width: 100%;
+            }
+        }
+        @media only screen and (min-width: 450px){
+            nav{
+                width: 100%;
+                font-size: 18px;
+            }
+            #sadrzaj{
+                margin: auto;
+            }
+            #rg{
+                margin: auto 1%;
+                width: 98%;
+            }
+            #bih{
+                margin: auto 1%;
+                width: 98%;
+            }
+            #rogen{
+                margin: auto 1%;
+                width: 98%;
+            }
+            .stranice ul li a {
+                color: blue;
+                float:left;
+                margin: 8px;
+                font-size: 14px;
+                font-weight: bold;
+                text-align: center;
+            
+            }
+            .fa {
+                padding: 10px;
+                font-size: 14px;
+                width: 16px;;
+                text-align: center;
+                text-decoration: none;
+            }
+            footer{
+                width: 100%;
+            }
+        }
+        @media only screen and (min-width: 600px){
+            nav{
+                width: 100%;
+                font-size: 20px;
+            }
+            #sadrzaj{
+                margin: auto;
+            }
+            #rg{
+                float: right;
+                width: 300px;
+            }
+            #bih{
+                float: left;
+                width: 300px;
+            }
+            #rogen{
+                float: right;
+                width: 320px;
+            }
+            .stranice ul li a {
+                color: blue;
+                float:left;
+                margin: 10px;
+                font-size: 18px;
+                font-weight: bold;
+                text-align: center;
+            
+            }
+            .fa {
+                padding: 10px;
+                font-size: 18px;
+                width: 20px;;
+                text-align: center;
+                text-decoration: none;
+            }
+            footer{
+                width: 100%;
+            }
+        }
+        @media only screen and (min-width: 760px){
+            nav{
+                width: 100%;
+                font-size: 24px;
+            }
+            #sadrzaj{
+                margin: auto;
+            }
+            #rg{
+                float: right;
+                width: 300px;
+            }
+            #bih{
+                float: left;
+                width: 300px;
+            }
+            #rogen{
+                float: right;
+                width: 320px;
+            }
+            .stranice ul li a {
+                color: blue;
+                float:left;
+                margin: 15px;
+                font-size: 22px;
+                font-weight: bold;
+                text-align: center;
+            
+            }
+            .fa {
+                padding: 10px;
+                font-size: 20px;
+                width: 25px;;
+                text-align: center;
+                text-decoration: none;
+            }
+            .ikonice{
+                margin: 22px;
+            }
+            footer{
+                width: 100%;
+            }
+        }
+        @media only screen and (min-width: 880px){
+            nav{
+                width: 100%;
+                font-size: 26px;
+            }
+            #sadrzaj{
+                margin: auto;
+            }
+            #rg{
+                float: right;
+                width: 300px;
+            }
+            #bih{
+                float: left;
+                width: 300px;
+            }
+            #rogen{
+                float: right;
+                width: 320px;
+            }
+            .stranice ul li a {
+                color: blue;
+                float:left;
+                margin: 15px;
+                font-size: 22px;
+                font-weight: bold;
+                text-align: center;
+            
+            }
+            .fa {
+                padding: 10px;
+                font-size: 20px;
+                width: 25px;;
+                text-align: center;
+                text-decoration: none;
+            }
+            .ikonice{
+                margin: 22px;
+            }
+            footer{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="kontejner">
+        <div id="header">
+            <nav>
+                <ul>
+                    <a href="pocetna.html"><li>Početna</li></a>
+                    <a href="biografija.html"><li>Biografija</li></a>
+                    <a href="galerija.html"><li>Galerija</li></a>
+                    <a href="mma.html"><li>MMA</li></a>
+                    <a href="kontakt.html"><li>Kontakt</li></a>
+                </ul>
+            </nav>
+        </div>
+        <div id="sadrzaj">
+            <div>
+                <h1>MMA</h1>
+                <h2>Osnovni podaci</h2>
+                <img src="slike\mma_1.jpg" id="rg">
+                <p>
+                    Mešovite borilačke veštine (engl. Mixed Martial Arts (MMA)), poznatije kao vale tudo, slobodna borba, ultimatna borba i slobodna borba, je moderni borilački sport u kojem se koriste tehnike raznih borilačkih veština. U istoriji čovečanstva svaka od drevnih civilizacija imala je jednu svoju veštinu borenja „golim rukama“, tj. bez oružja (rvanje, udaranje itd). Najverovatnije je prapočetak mešovitih borilačkih veština u grčkom sportu tog vremena, pod imenom pankration.
+                </p>
+                <p>
+                    Grci su 648. godine pre nove ere, sport pankration uveli na Olimpijske igre. Reč pankration je kombinacija dve grčke reči „pan“, koja znači sve, i „kratos“, koja znači moć ili snaga. U pitanju je prilično dobar opis samog sporta, pošto je u pitanju bila kombinacija helenskog boksa i rvanja. Sport je imao samo dva pravila: bez ujedanja i kopanja očiju, mada su i ove tehnike bile dozvoljene kod Spartanaca. Mečevi su se završavali jedino ako bi jedan od takmičara ostao bez svesti, ili ako bi se predao podizanjem ruke. Često bi ove borbe trajale satima, a ponekad su se završavale smrću jednog, ili oba takmičara.
+                </p>
+                <h2>Pankration</h2>
+                <img src="slike\pank_1.jpg" id="bih">
+                <p>
+                    Borbe su se održavale u areni, ili u ringu koji je bio kvadratnog oblika, dužine od 3,5 - 4m, što je činjeno jer je favorizovana borba prsa u prsa. Borba je imala i sudiju koji je bio opremljen prutom ili palicom kojom je sprovodio pravila, koje su često bivala kršena. Tehnike koje su se upotrebljavale bile su udarci rukama, nogama, laktovima i kolenima, poluge i davljenja. Koristili su se i udarci nogom u noge, prepone i stomak. Udaralo se u stojećem stavu, mada je većina borbi u pankrationu završavala na podu, gde se i rvalo i udaralo. Borci su bili poznati po svojim grepling mogućnostima, i primenjivali su veliki broj tehnika, kao što su obaranja, davljenja, gušenja, poluge. Gušenje je bilo najčešći uzrok smrti u pankrationu.
+                </p>
+                <p>
+                    Borci pankrationa drevne Grčke su postajali heroji, i teme brojnih mitova i legendi. Poznata je i legenda o Arihionu, Dioksipusu, Polidamosu, a čak se i za Herkula verovalo da je borac pankrationa. Aleksandar Veliki je među njima tražio vojnike, jer su njihove veštine u nenaoružanoj borbi bile legendarne. Mnogi od njih su sa Aleksandrom osvajali Indiju 326. p. n. e. To se smatra početkom azijskih borilačkih veština, koje većinom svoje korene nalaze u Indiji tog vremena. Pankration je prva zabeležena forma onoga što će kasnije biti poznato kao mešavina borilačkih veština, i nešto najdalje u čemu je bilo koje društvo došlo u dozvoljavanju golorukog borenja bez pravila.
+                </p>
+                
+                <img src="slike\mma_2.jpg" id="rogen">
+                <p>
+                    Moderna MMA takmičenja imaju dug istorijat, koji se pruža čak do 1800-ih godina kada su se rvači koji su predstavljali veliki broj stilova koji su uključivali џијуџицу, catch-as-catch-can (ухвати-како-можеш), collar-and-elbow (крагна-и-лакат), grčko-rimski i mnogi drugi, sastajali na turnirima i revijalnim borbama širom čitave Evrope. Ipak, popularnost profesionalnog rvanja je nestala nakon Prvog svetskog rata, da bi se nakon nekog vremena pojavila u dva glavna pravca: „šut“ (shoot), u kojem su se borci zaista takmičili, i „šou“ (show) koji se u velikoj meri zasnivao na koreografiji i teatru, koji se kasnije razvio u moderno profesionalno rvanje.
+                </p>
+                <p>
+                    Savremeni MMA najviše vodi poreklo od takmičenja bez pravila vale tudo koja su postala popularna u Brazilu početkom XX veka. Ovaj sport je međunarodni uspeh postigao tek od 1993. kroz UFC turnire (Ultimate Fight Championship), koje je u SAD pokrenuo Rorion Grejsi.
+                <p>
+                    Početkom 1900-ih u Brazilu se održavaju borbe bez pravila, pod nazivom vale tudo (sve dozvoljeno). U to vreme je bilo puno japanskih doseljenika koji su u Brazilu vežbali џудо и џијуџицу. Najpoznatiji, ali ne i jedini, predstavnici џијуџицуа tog vremena, bili su članovi familije Grejsi - Karlos i Helio Grejsi, koji su doprineli razvoju i popularizaciji brazilskog džijudžicua, kao osnove vale tudo borbi.
+                </p>
+            </div>
+        </div>
+        <footer >
+            <div class="stranice" >
+                <ul>
+                    <li><a href="pocetna.html">Početna</a></li>
+                    <li><a href="galerija.html">Galerija</a></li>
+                    <li><a href="biografija.html">Biografija</a></li>
+                </ul>
+            </div>
+            <div class="ikonice">
+                <ul>
+                    <li> <a href="https://www.facebook.com" class="fa fa-facebook" target="blank"></a></li>
+                    <li>  <a href="https://www.instagram.com" class="fa fa-instagram" target="blank"></a></li> 
+                </ul>
+            </div>
+        </footer >
+    </div>
+</body>
+</html>
